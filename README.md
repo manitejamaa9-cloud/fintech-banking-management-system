@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # FinTech Bank - Banking Analytics Dashboard
 
 A full-stack demo of a retail bank back office: customers, accounts, loans, EMI
@@ -286,3 +287,7 @@ This erases the seeded tables and regenerates them. See the warning above.
 - The default JWT secret is for local development only.
 - Fraud flags are simulated and must not be treated as a real detection system.
 - Never commit `server\.env`; it is ignored by git.
+=======
+# fintech-banking-management-system
+Smart Banking Management and Financial Analytics System
+>>>>>>> 872941d3fe2a0b7478436df16c4cc2bfe0d29593
