@@ -1,0 +1,4 @@
+transaction_id,customer_id,transaction_date,amount,transaction_type,payment_method,merchant,merchant_category,status,fraud_flag
+SAMPLE-0001,CUST-DEMO-001,2026-01-15,2499.00,debit,UPI,Amazon,E-commerce,Successful,false
+SAMPLE-0002,CUST-DEMO-002,2026-01-16,85000.00,credit,NEFT,Salary,Income & Transfers,Successful,false
+SAMPLE-0003,CUST-DEMO-003,2026-01-17,125000.00,debit,RTGS,Unknown Vendor,Other,Failed,true

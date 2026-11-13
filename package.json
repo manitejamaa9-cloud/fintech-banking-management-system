@@ -1,0 +1,37 @@
+{
+  "name": "fintech-banking",
+  "version": "1.0.0",
+  "private": true,
+  "description": "FinTech Banking Management & Financial Analytics Dashboard",
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "install:all": "npm install",
+    "setup": "npm install",
+    "dev:server": "npm run dev --workspace server",
+    "dev:client": "npm run dev --workspace client",
+    "dev": "concurrently -n server,client -c cyan,magenta \"npm run dev:server\" \"npm run dev:client\"",
+    "db:init": "npm run db:init --workspace server",
+    "db:create": "npm run db:create --workspace server",
+    "db:force": "npm run db:force --workspace server",
+    "db:status": "npm run db:status --workspace server",
+    "seed": "npm run seed --workspace server",
+    "seed:force": "npm run seed:force --workspace server",
+    "data:repair": "npm run data:repair --workspace server",
+    "import:csv": "npm run import:csv --workspace server",
+    "test": "npm run test --workspace server",
+    "typecheck": "npm run typecheck --workspace client",
+    "check": "npm run typecheck && npm test",
+    "build": "npm run build --workspace client",
+    "preview": "npm run preview --workspace client",
+    "start": "npm run start --workspace server"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  }
+}

@@ -1,0 +1,26 @@
+# Dependencies and build output
+node_modules/
+dist/
+client/dist/
+.vite/
+coverage/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+server/.env
+client/.env
+
+# Logs and temporary files
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+tmp/
+
+# Generated reports
+server/reports/generated/
+
+# Import staging output
+data/import-failures-*.csv
